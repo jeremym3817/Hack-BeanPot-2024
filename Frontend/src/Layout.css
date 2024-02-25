@@ -1,0 +1,18 @@
+.Class-Cards {
+  display: flexbox;
+  flex-direction: row;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
+  
+}
+
+.Day-Names {
+  display: flexbox;
+  flex-direction: row;
+}
+
+.Card {
+  width: 150px;
+  margin-top: 4px;
+}

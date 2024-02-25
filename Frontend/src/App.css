@@ -1,6 +1,4 @@
-.App {
-  background-color: bisque;
-}
+
 
 .Middle {
   display: flex;
@@ -20,9 +18,17 @@
   align-items: center;
 
   width: 500px;
-  height: 500px;
 
-  background-color: #61dafb;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 45px;
+
+  border-radius: 10px;
+
+  left: 0;
+  bottom: 0;
+
+  background-color: rgb(186, 186, 186);
 }
 
 .Class {
@@ -56,8 +62,7 @@
 
 .Calender {
   position: sticky;
-  min-width: 500px;
-  max-width: 1000px;
+  width: 1200px;
 
   display: flex;
   flex-direction: row;
@@ -69,7 +74,9 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  background-color: gray;
+  background-color: rgb(186, 186, 186);
+
+  border-radius: 20px;
 }
 
 .Dates {
