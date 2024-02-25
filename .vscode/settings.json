@@ -4,6 +4,7 @@
     "backend_db/lib/sqlite-jdbc-3.45.1.0.jar"
   ],
   "cSpell.words": [
+    "dcleader",
     "jsonify"
   ]
 }

@@ -11,7 +11,6 @@
 # Run the Development Server: Flask comes with a built-in development server that you can use to test your application locally. Run your Flask application using the command flask run in your terminal.
 
 from flask import Flask, request, jsonify
-# from flask_pymongo import PyMongo
 from pymongo.mongo_client import MongoClient
 
 uri = "mongodb+srv://dcleader99:ztjVWZHUmqTrZMi5@hackbeanpot.lrlzr0q.mongodb.net/?retryWrites=true&w=majority&appName=Hackbeanpot"

@@ -9,8 +9,8 @@ uri = "mongodb+srv://dcleader99:ztjVWZHUmqTrZMi5@hackbeanpot.lrlzr0q.mongodb.net
 client = MongoClient(uri)
 # Connect to MongoDB Atlas
 # Replace <username>, <password>, <cluster_name>, and <database_name> with your own values
-db = client.get_database('<database_name>')  # Replace <database_name> with your own database name
-collection = db['your_collection']  # Replace 'your_collection' with your own collection name
+db = client.get_database('classes')  # Replace <database_name> with your own database name
+collection = db['neu']  # Replace 'your_collection' with your own collection name
 
 # Send a ping to confirm a successful connection
 try:
