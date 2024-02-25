@@ -15,6 +15,8 @@
 from flask import Flask, request, jsonify
 from pymongo.mongo_client import MongoClient
 from dotenv import load_dotenv
+from pprint import pprint
+# from TestMongoQuery import queryInsert, querySearch
 import os
 
 # Load environment variables from .env file
@@ -40,23 +42,48 @@ except Exception as e:
 
 app = Flask(__name__)
 
-@app.route('/api/receive', methods=['POST','GET'])
+# @app.route('/api', methods=['POST'])
+# def receive_json():
+#     if request.method == 'POST': #JSON received for Querying
+#         if request.is_json:
+#             data = request.json  # Get JSON data from the request
+#             new_id = data["id"]
+#             new_course_name = data["class_name"]
+#             new_timeslot = data["timeslot"]
+            
+#             new_obj = {
+#                 '_id': new_id,
+#                 "class_name": new_course_name,
+#                 "timeslot": new_timeslot
+#             }
+#             obj_json = jsonify(new_obj)
+#             queryInsert(obj_json)
+#             # Process the received data (optional)
+#             # For example, you can save it to a database, perform calculations, etc.
+
+#             # Send a response back to the client
+#             response = {"message": "JSON received successfully"}
+#             return jsonify(response), 200
+#         else:
+#             return jsonify({"error": "Request must be JSON"}), 400
+
+@app.route('/', methods=['GET'])
 def receive_json():
-    if request.is_json:
-        data = request.json  # Get JSON data from the request
-        
-        
-        print("Received JSON:", data)
-        
+    if request.method == 'GET': #JSON received for Querying
+        cursor = collection.find({"_id":1})
+        document_list = []
+        for i in cursor:
+            document_list.append(i)
+        response = {"message": "JSON received successfully"}
+        return jsonify(document_list), 200
         # Process the received data (optional)
         # For example, you can save it to a database, perform calculations, etc.
 
         # Send a response back to the client
-        response = {"message": "JSON received successfully"}
-        return jsonify(response), 200
+
+        # return jsonify(response), 200
     else:
         return jsonify({"error": "Request must be JSON"}), 400
-
 
 if __name__ == '__main__':
     app.run(debug=True)
