@@ -37,14 +37,14 @@ try:
 except Exception as e:
     print(e)
 
-from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/api/receive', methods=['POST'])
+@app.route('/api/receive', methods=['POST','GET'])
 def receive_json():
     if request.is_json:
         data = request.json  # Get JSON data from the request
+        
         
         print("Received JSON:", data)
         
@@ -56,6 +56,7 @@ def receive_json():
         return jsonify(response), 200
     else:
         return jsonify({"error": "Request must be JSON"}), 400
+
 
 if __name__ == '__main__':
     app.run(debug=True)

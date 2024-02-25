@@ -1,4 +1,4 @@
-## Class Scheduler Project##
+## Class Scheduler Project
 
 # To run python scripts
 
