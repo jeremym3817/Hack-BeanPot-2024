@@ -1,0 +1,108 @@
+{ "_id":1,
+  "classes": [
+    {
+      "_id": 1,
+      "class_name": "Mathematics",
+      "timeslots": [
+        {
+          "timeslot": 1,
+          "professor": "Dr. Smith",
+          "class_size": 30,
+          "start_time": "09:00 AM",
+          "end_time": "10:30 AM",
+          "difficulty_rating": 3
+        },
+        {
+          "timeslot": 2,
+          "professor": "Prof. Johnson",
+          "class_size": 25,
+          "start_time": "11:00 AM",
+          "end_time": "12:30 PM",
+          "difficulty_rating": 2
+        },
+        {
+          "timeslot": 3,
+          "professor": "Dr. Brown",
+          "class_size": 28,
+          "start_time": "02:00 PM",
+          "end_time": "03:30 PM",
+          "difficulty_rating": 4
+        }
+      ]
+    },
+    {
+      "_id": 2,
+      "class_name": "Physics",
+      "timeslots": [
+        {
+          "timeslot": 1,
+          "professor": "Prof. White",
+          "class_size": 32,
+          "start_time": "10:00 AM",
+          "end_time": "11:30 AM",
+          "difficulty_rating": 3
+        },
+        {
+          "timeslot": 2,
+          "professor": "Dr. Green",
+          "class_size": 27,
+          "start_time": "12:00 PM",
+          "end_time": "01:30 PM",
+          "difficulty_rating": 4
+        },
+        {
+          "timeslot": 3,
+          "professor": "Prof. Black",
+          "class_size": 30,
+          "start_time": "03:00 PM",
+          "end_time": "04:30 PM",
+          "difficulty_rating": 2
+        }
+      ]
+    },
+    {
+        "_id": 3,
+        "class_name": "CS 110",
+        "timeslots": [
+          {
+            "timeslot": 1,
+            "professor": "Prof. Matthew Bill",
+            "class_size": 231,
+            "start_time": "08:00 AM",
+            "end_time": "10:30 AM",
+            "difficulty_rating": 10
+          },
+          {
+            "timeslot": 2,
+            "professor": "Hank Green",
+            "class_size": 301,
+            "start_time": "02:00 PM",
+            "end_time": "03:30 PM",
+            "difficulty_rating": 4
+          }
+        ]
+      },
+      {
+        "_id": 4,
+        "class_name": "Intro to Software Engineering",
+        "timeslots": [
+          {
+            "timeslot": 1,
+            "professor": "Luke Skywalker",
+            "class_size": 280,
+            "start_time": "08:15 AM",
+            "end_time": "10:30 AM",
+            "difficulty_rating": 10
+          },
+          {
+            "timeslot": 3,
+            "professor": "Luke Skywalker",
+            "class_size": 287,
+            "start_time": "11:00 AM",
+            "end_time": "01:30 PM",
+            "difficulty_rating": 4
+          }
+        ]
+      }
+  ]
+}

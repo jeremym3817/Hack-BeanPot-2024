@@ -24,7 +24,7 @@ db = client["classes"]
 collection = db["neu"]
 
 # Open the JSON file in read mode
-with open('data.json', 'r') as file:
+with open('newData.json', 'r') as file:
     json_data = json.load(file)
 
 if isinstance(json_data, list):
